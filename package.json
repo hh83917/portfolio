@@ -1,0 +1,17 @@
+{
+  "name": "howard_portfolio",
+  "version": "1.0.0",
+  "description": "Howard's portfolio website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.3.7"
+  }
+}
