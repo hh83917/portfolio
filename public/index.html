@@ -3,21 +3,152 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Howard Huang</title>
+    <title>Howard Huang's Portfolio</title>
+    <!-- conponents -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/hover/css/hover-min.css">
+    <!-- styles.css -->
+    <link rel="stylesheet" type="text/css" href="/styles/bootstrap-lumen.min.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
-  <body ng-app="howardPortfolio">
+  <body ng-app="howardPortfolio" ng-controller="mainCtrl">
 
-    <div class="sideBarMenu">
-      one
+
+    <div class="sideBar">
+      <div class="sidebarMenu">
+
+        <div class="hhLogo">
+          <img src="assets/howard_huang_logo.svg"/>
+        </div>
+
+        <div class="menuItems">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mainContent">
+
+      <div class="aboutMe" id="about">
+        <div class="slogan">
+          <p>Born and raised in Taiwan</p>
+          <p>Likes traveling, the outdoors, and experiencing culture</p>
+          <p>Loves new technologies and enjoys learning new things</p>
+        </div>
+        <div class="quote">
+          <p>"Live as if you were to die tomorrow.</p>
+          <p id="line2">Learn as if you were to live forever."</p>
+          <p id="quoteName">Mahatma Gandhi</p>
+        </div>
+        <div class="personalPic">
+          <img src="assets/howard_huang.png"/>
+          <div class="myNameAndTitle">
+            <h1>Howard Huang</h1>
+            <h3>- Web Developer -</h3>
+            <a href="https://www.linkedin.com/in/howardhuangtexas" target="_blank"><i class="fa fa-linkedin-square fa-2x hvr-pulse-grow" id="connectIcons"></i></a>
+            &nbsp
+            <a href="https://twitter.com/hh83917" target="_blank"><i class="fa fa-twitter fa-2x hvr-pulse-grow" id="connectIcons"></i></a>
+            &nbsp
+            <a href="https://github.com/hh83917" target="_blank"><i class="fa fa-github fa-2x hvr-pulse-grow" id="connectIcons"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySkill" id="skills">
+        <br>
+        <br>
+        <br>
+        <div class="logos1">
+          <a href="https://git-scm.com/" target="_blank" class="hvr-buzz"><img src="/assets/git.png"/></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" class="hvr-buzz"><img src="/assets/html5.png"/></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank" class="hvr-buzz"><img src="/assets/css3.png"/></a>
+          <a href="https://www.javascript.com/" target="_blank" class="hvr-buzz"><img src="/assets/javascript.png"/></a>
+          <a href="http://getbootstrap.com/" target="_blank" class="hvr-buzz"><img src="/assets/bootstrap.png"/></a>
+          <a href="https://www.firebase.com/" target="_blank" class="hvr-buzz"><img src="/assets/firebase.png"/></a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="logos2">
+          <div class="logoBG hvr-buzz">
+            <a href="https://www.mongodb.com/" target="_blank"><img src="/assets/mongodb.png"/></a>
+          </div>
+          <a href="http://expressjs.com/" target="_blank" class="hvr-buzz"><img src="/assets/express.png"/></a>
+          <a href="https://angularjs.org/" target="_blank" class="hvr-buzz"><img src="/assets/angularjs.png"/></a>
+          <div class="logoBG hvr-buzz">
+            <a href="https://nodejs.org/" target="_blank"><img src="/assets/nodejs.png"/></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="myProject" id="project">
+        <div class="skedUs indProject">
+          <h3>Sked</h3>
+          <a href="http://sked.us/" target="_blank" class="hvr-float-shadow"><img src="/assets/sked/sked.jpg"/></a>
+          <br>
+          <br>
+          <p>Full MEAN stack application for appointment creation and booking with consideration for multi-organization and multi-user scenario.</p>
+        </div>
+        <div class="spellingB indProject">
+          <h3>Spelling B</h3>
+          <a href="https://hh83917.github.io/SpellingB/" target="_blank" class="hvr-float-shadow"><img src="/assets/spellingB/spellingB.jpg"/></a>
+          <br>
+          <br>
+          <p>Children spelling list creation and testing application with built-in text-to-speech functionality.</p>
+        </div>
+      </div>
+
+      <div class="myResume" id="resume">
+        <p>Resume</p>
+        <br>
+        <div class="resumeButton">
+          <div class="form-group">
+            <div class="indResumeBtn">
+              <input type="submit" onclick="window.open('https://docs.google.com/document/d/1oPYaNmvjCHxcQF-iYBDv0MlgfGst5LqUpzIjv1ZNCRo/edit?usp=sharing', '_blank');" value="View on Google Docs" class="btn btn-primary btn-lg">
+            </div>
+            <div class="">
+              <input type="submit" onclick="window.open('/assets/Howard_Huang_Resume.pdf', '_blank');" value="Download as PDF" class="btn btn-primary btn-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="myContact" id="contact">
+        <div class="connectWithMe">
+          <h3>Connect with me</h3>
+          <div class="connectIcons">
+            <a href="https://www.linkedin.com/in/howardhuangtexas" target="_blank"><i class="fa fa-linkedin-square fa-4x hvr-pulse-grow" id="connectIcons"></i></a>
+            <a href="https://twitter.com/hh83917" target="_blank"><i class="fa fa-twitter fa-4x hvr-pulse-grow" id="connectIcons"></i></a>
+          </div>
+        </div>
+        <div class="split"></div>
+
+        <div class="contactMeForm">
+          <h3>Contact me</h3>
+          <div class="reCaptcha">
+            <a href="http://www.google.com/recaptcha/mailhide/d?k=01xbs5siznxjMBOSCFrMR-ew==&amp;c=eQrizfmz71ZkOTgM6NHOMBb5w3I_VpzJ5FbPLKbK-FA=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501xbs5siznxjMBOSCFrMR-ew\75\75\46c\75eQrizfmz71ZkOTgM6NHOMBb5w3I_VpzJ5FbPLKbK-FA\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal my e-mail address"><i class="fa fa-envelope fa-2x hvr-grow-rotate"> Reveal Email</i></a>
+          </div>
+        </div>
+      </div>
     </div>
 
 
+    <!-- conponents -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- angular modules -->
     <script src="app.js"></script>
+    <script src="controllers/mainCtrl.js"></script>
   </body>
 </html>
