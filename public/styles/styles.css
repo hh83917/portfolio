@@ -72,9 +72,10 @@ html, body {
 		height: auto;
 	}
 	.personalPic img {
-		max-width: 450px !important;
+		width: 450px !important;
+		height: auto;
 		margin-top: -28px;
-		margin-left: -50px;
+		margin-left: -75px;
 	}
 	.slogan {
 		margin-top: 275px !important;
