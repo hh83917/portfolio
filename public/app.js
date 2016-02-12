@@ -1,1 +1,1 @@
-angular.module("howardPortfolio", []);
+angular.module("howardPortfolio", ['duScroll']);
